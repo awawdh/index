@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Birthday Voice Note</title>
+    <title>Happiest Birthday!</title>
     <style>
         body {
             display: flex;
@@ -12,33 +12,41 @@
             height: 100vh;
             margin: 0;
             font-family: 'Comic Sans MS', cursive, sans-serif;
-            background-color: #ffe6f2;
+            background-image: radial-gradient(circle, #f0c3ff, #8c00ff);
+            background-size: cover;
+            background-repeat: no-repeat;
         }
         .voice-note-container {
             text-align: center;
-            background: #fff0f5;
-            padding: 20px;
+            background: rgba(255, 255, 255, 0.9);
+            padding: 30px;
             border-radius: 20px;
             box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
             border: 3px solid #ff66b2;
+            max-width: 80%;
         }
         h1 {
             color: #ff3399;
-            font-size: 2.5em;
-            margin-bottom: 10px;
+            font-size: 3em;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
         }
         audio {
-            width: 300px;
-            margin-top: 10px;
+            width: 80%;
+            max-width: 400px;
+            margin-top: 20px;
         }
         .show-more {
             display: inline-block;
-            margin-top: 15px;
-            padding: 10px 20px;
+            margin-top: 30px;
+            padding: 15px 30px;
+            font-size: 1.2em;
+            font-weight: bold;
             text-decoration: none;
             color: white;
             background-color: #ff66b2;
             border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
             transition: background-color 0.3s ease;
             cursor: pointer;
         }
@@ -49,22 +57,22 @@
 </head>
 <body>
     <div class="voice-note-container">
-        <h1>Happy Birthday!</h1>
+        <h1>Happiest Birthday!</h1>
         <audio controls>
             <source src="your-voice-note-file.mp3" type="audio/mpeg">
             Your browser does not support the audio element.
         </audio>
         <br>
-        <div class="show-more" onclick="checkPassword()">Show More</div>
+        <div class="show-more" onclick="checkPassword()">Unlock Special Surprise 🥳</div>
     </div>
 
     <script>
         function checkPassword() {
-            const password = prompt("حاولي تحلي مشكلاتك في اشياء داينا بتحل كل المشاكل ...");
+            const password = prompt("جربي حلي مشاكلك 😎");
             if (password === "بودي") {
                 window.location.href = "more.html";
             } else {
-                alert("Incorrect password. Please try again.");
+                alert("شكل مالك بالطيب نصيب 😪 ");
             }
         }
     </script>
